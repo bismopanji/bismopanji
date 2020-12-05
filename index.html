@@ -107,33 +107,33 @@
 					<div class="latest_style_2">  
 						<div class="latest_style_2_item_first">							                                                  
 							<figure class="alith_post_thumb_big">
-								<span class="post_meta_categories_label">Legal, Blog</span>
-								<a href="single.html"><img src="assets/images/thumb-large.jpg" alt=""/></a>
+								<span class="post_meta_categories_label">Tourism, Travel</span>
+								<a href="single.html"><img src="assets/images/malangjpg/one_large1.jpg" alt=""/></a>
 							</figure>
 							<h3 class="alith_post_title">
-								<a href="single.html"><strong>Nor again is there anyone who loves or pursues or desires to obtain</strong></a>
+								<a href="single.html"><strong>Menikmati Matahari Terbenam di Pulau Merah Banyuwangi</strong></a>
 							</h3>
 						</div>
 						<div class="latest_style_2_item">
-							<figure class="alith_news_img"><a href="single.html"><img src="assets/images/thumb-square-1.png" alt=""/></a></figure>
-							<h3 class="alith_post_title"><a href="single.html">Magna aliqua ut enim ad minim veniam quis </a></h3>
+							<figure class="alith_news_img"><a href="single.html"><img src="assets/images/malangjpg/one_square2.jpg" alt=""/></a></figure>
+							<h3 class="alith_post_title"><a href="single.html">Wisata Pantai Dagelan Gresik Lebih Ramai Selama Covid-19</a></h3>
 							
 							<div class="post_meta">			
-								<p class="meta"><span>2 Sep, 2018</span> <span>268 views</span></p>
+								<p class="meta"><span>14 Nov, 2020</span> <span>268 views</span></p>
 							</div>
 						</div>
 						<div class="latest_style_2_item">
-							<figure class="alith_news_img"><a href="single.html"><img src="assets/images/thumb-square-2.png" alt=""/></a></figure>
-							<h3 class="alith_post_title"><a href="single.html">Magna aliqua ut enim ad minim veniam</a></h3>
+							<figure class="alith_news_img"><a href="single.html"><img src="assets/images/malangjpg/one_square3.jpg" alt=""/></a></figure>
+							<h3 class="alith_post_title"><a href="single.html">Update Kondisi Walikota Malang Pasca Covid-19</a></h3>
 							<div class="post_meta">			
-								<span class="meta_date">18 Sep, 2018</span>
+								<span class="meta_date">2 Des, 2020</span>
 							</div>
 						</div>
 						<div class="latest_style_2_item">
-							<figure class="alith_news_img"><a href="single.html"><img src="assets/images/thumb-square-3.png" alt=""/></a></figure>
-							<h3 class="alith_post_title"><a href="single.html">Magna aliqua ut enim ad minim veniam</a></h3>
+							<figure class="alith_news_img"><a href="single.html"><img src="assets/images/malangjpg/one_square4.jpg" alt=""/></a></figure>
+							<h3 class="alith_post_title"><a href="single.html">40 ASN Pemkot Malang Positif Covid-19</a></h3>
 							<div class="post_meta">			
-								<span class="meta_date">18 Sep, 2018</span>
+								<span class="meta_date">2 Des, 2020</span>
 							</div>
 						</div>
 					</div>
@@ -159,7 +159,7 @@
 						<div class="row">
 							<div class="col-md-6 col-sm-12 time">
 								<div class="off-canvas-toggle" id="off-canvas-toggle"><span></span><p class="sidebar-open">MORE</p></div>
-								<i class="fa fa-clock-o"></i><span>&nbsp;&nbsp;&nbsp;Friday, 4 Desember 2020</span>               
+								<i class="fa fa-clock-o"></i><span class="tanggal">&nbsp;&nbsp;&nbsp;Saturday, 5 Desember 2020</span>               
 							</div>
 							<div class="col-md-6 col-sm-12 social">
 								<ul>
@@ -786,5 +786,13 @@
 		<script src="assets/js/smart-sticky.js"></script>
 		<script src="assets/js/theia-sticky-sidebar.js"></script>
 	</div> <!--#wrapper-->
+	<script>
+		const tgl = new Date();
+		const hari = ['Senin', 'Selasa','Rabu','Kamis','Jumat','Sabtu','Minggu'];
+		const bulan = ['Januari', 'February','Maret','April','Mei','Juni','Juli','Agustus','September','Oktober','November','Desember'];
+		const hariIni = `${hari[tgl.getDay()]}, ${tgl.getDate()}, ${bulan[tgl.getMonth()]}, ${tgl.getFullYear()}`
+		const element = document.querySelector('.tanggal');
+  		element.innerText = hariIni();
+	</script>
 </body>
 </html>
